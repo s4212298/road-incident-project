@@ -4,8 +4,6 @@ body{
     background-color:#f4f4f4;
 }
 
-
-
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -29,7 +27,6 @@ body{
     color:#38bdf8;
 }
 
-/* HERO */
 
 .hero{
     text-align:center;
@@ -81,14 +78,14 @@ body{
     font-weight:bold;
     color:#2563eb;
 }
-/* DASHBOARD HEADER */
+
 
 .dashboard-header{
     text-align:center;
     padding:50px 20px;
 }
 
-/* FILTERS */
+
 
 .filter-section{
     display:flex;
@@ -115,7 +112,7 @@ body{
     border:1px solid #ccc;
 }
 
-/* TABLE */
+
 
 .table-section{
     padding:50px;
@@ -138,7 +135,7 @@ th{
     color:white;
 }
 
-/* CHART */
+
 
 .chart-section{
     padding:50px;

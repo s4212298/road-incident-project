@@ -1,26 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Deep Insights</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-    <h1>Deep Insights</h1>
+    <nav class="navbar">
 
-    <a href="/">Home</a>
-    <a href="/weather">Weather Analysis</a>
-    <a href="/insights">Deep Insights</a>
+        <h2>Road Incident Analysis</h2>
 
-    <hr>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/weather">Weather Dashboard</a>
+            <a href="/insights">Deep Insights</a>
+        </div>
 
-    <h2>Advanced Insights</h2>
+    </nav>
 
-    <p>
-        This page will display advanced discoveries
-        from accident data.
-    </p>
+    <section class="dashboard-header">
+
+        <h1>Deep Insights Dashboard</h1>
+
+        <p>
+            Discover advanced accident patterns based on
+            atmospheric, light and road surface conditions.
+        </p>
+
+    </section>
+
+    <!-- INSIGHT CARDS -->
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Above Average Risk Weather</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="card">
+            <h3>Most Dangerous Light Condition</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="card">
+            <h3>Highest Risk Road Surface</h3>
+            <p>Coming Soon</p>
+        </div>
+
+    </section>
+
+    <!-- ADVANCED INSIGHTS -->
+
+    <section class="table-section">
+
+        <h2>Advanced Pattern Discovery</h2>
+
+        <table>
+
+            <tr>
+                <th>Condition</th>
+                <th>Accident Count</th>
+                <th>Risk Level</th>
+            </tr>
+
+            <tr>
+                <td>Rainy</td>
+                <td>2400</td>
+                <td>Above Average</td>
+            </tr>
+
+            <tr>
+                <td>Dark No Lights</td>
+                <td>1700</td>
+                <td>High Risk</td>
+            </tr>
+
+            <tr>
+                <td>Wet Surface</td>
+                <td>1950</td>
+                <td>Above Average</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- SQL INSIGHT SECTION -->
+
+    <section class="chart-section">
+
+        <h2>Advanced Analysis Area</h2>
+
+        <div class="chart-placeholder">
+
+            Future Features:
+            <br><br>
+
+            • Above-average accident detection
+            <br>
+            • Trend comparisons
+            <br>
+            • High-risk condition analysis
+            <br>
+            • Advanced SQL insights
+
+        </div>
+
+    </section>
 
 </body>
 </html>

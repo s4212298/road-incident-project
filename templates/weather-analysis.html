@@ -1,31 +1,149 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Weather Analysis</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-    <h1>Weather & Road Analysis</h1>
+    <nav class="navbar">
 
-    <a href="/">Home</a>
-    <a href="/weather">Weather Analysis</a>
-    <a href="/insights">Deep Insights</a>
+        <h2>Road Incident Analysis</h2>
 
-    <hr>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/weather">Weather Dashboard</a>
+            <a href="/insights">Deep Insights</a>
+        </div>
 
-    <h2>Summary Dashboard</h2>
+    </nav>
 
-    <p>
-        Accident summaries based on:
-    </p>
+    <section class="dashboard-header">
 
-    <ul>
-        <li>Atmospheric Conditions</li>
-        <li>Road Surface</li>
-        <li>Light Conditions</li>
-    </ul>
+        <h1>Weather & Road Condition Dashboard</h1>
+
+        <p>
+            Explore accident summaries based on atmospheric,
+            road surface and light conditions.
+        </p>
+
+    </section>
+
+    <!-- FILTER SECTION -->
+
+    <section class="filter-section">
+
+        <div class="filter-box">
+
+            <label>Atmospheric Condition</label>
+
+            <select>
+                <option>All</option>
+                <option>Rainy</option>
+                <option>Fog</option>
+                <option>Clear</option>
+            </select>
+
+        </div>
+
+        <div class="filter-box">
+
+            <label>Light Condition</label>
+
+            <select>
+                <option>All</option>
+                <option>Daylight</option>
+                <option>Dark Street Lights On</option>
+                <option>Dark No Lights</option>
+            </select>
+
+        </div>
+
+        <div class="filter-box">
+
+            <label>Road Surface</label>
+
+            <select>
+                <option>All</option>
+                <option>Dry</option>
+                <option>Wet</option>
+                <option>Muddy</option>
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- SUMMARY CARDS -->
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Total Weather Related Accidents</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="card">
+            <h3>Highest Risk Condition</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="card">
+            <h3>Most Common Light Condition</h3>
+            <p>Coming Soon</p>
+        </div>
+
+    </section>
+
+    <!-- TABLE -->
+
+    <section class="table-section">
+
+        <h2>Accident Summary Table</h2>
+
+        <table>
+
+            <tr>
+                <th>Condition</th>
+                <th>Total Accidents</th>
+            </tr>
+
+            <tr>
+                <td>Rainy</td>
+                <td>1200</td>
+            </tr>
+
+            <tr>
+                <td>Fog</td>
+                <td>450</td>
+            </tr>
+
+            <tr>
+                <td>Clear</td>
+                <td>3400</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- CHART PLACEHOLDER -->
+
+    <section class="chart-section">
+
+        <h2>Visual Insights</h2>
+
+        <div class="chart-placeholder">
+            Chart.js Graph Coming Soon
+        </div>
+
+    </section>
 
 </body>
 </html>

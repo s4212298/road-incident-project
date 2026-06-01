@@ -81,3 +81,75 @@ body{
     font-weight:bold;
     color:#2563eb;
 }
+/* DASHBOARD HEADER */
+
+.dashboard-header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+/* FILTERS */
+
+.filter-section{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.filter-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.filter-box label{
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.filter-box select{
+    padding:10px;
+    width:220px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* TABLE */
+
+.table-section{
+    padding:50px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th, td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+th{
+    background:#1e293b;
+    color:white;
+}
+
+/* CHART */
+
+.chart-section{
+    padding:50px;
+}
+
+.chart-placeholder{
+    height:300px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}

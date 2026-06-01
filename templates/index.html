@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Road Incident Analysis</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
-    <h1>Road Incident Analysis Website</h1>
+    <nav class="navbar">
 
-    <a href="/">Home</a>
-    <a href="/weather">Weather Analysis</a>
-    <a href="/insights">Deep Insights</a>
+        <h2>Road Incident Analysis</h2>
 
-    <hr>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/weather">Weather Dashboard</a>
+            <a href="/insights">Deep Insights</a>
+        </div>
 
-    <h2>Welcome</h2>
+    </nav>
 
-    <p>
-        This website analyses Victorian road accidents
-        based on atmospheric, road surface and light conditions.
-    </p>
+    <section class="hero">
+
+        <h1>Understanding Victorian Road Accidents</h1>
+
+        <p>
+            Explore road accident patterns based on weather,
+            road surface and light conditions.
+        </p>
+
+    </section>
+
+    <section class="facts-section">
+
+        <h2>Key Statistics</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Accidents</h3>
+                <p>Coming Soon</p>
+            </div>
+
+            <div class="card">
+                <h3>Most Dangerous Weather</h3>
+                <p>Coming Soon</p>
+            </div>
+
+            <div class="card">
+                <h3>Most Common Light Condition</h3>
+                <p>Coming Soon</p>
+            </div>
+
+            <div class="card">
+                <h3>Highest Risk Road Surface</h3>
+                <p>Coming Soon</p>
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 </html>

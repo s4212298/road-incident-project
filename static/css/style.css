@@ -1,0 +1,21 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1{
+    color: darkblue;
+}
+
+a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    color: blue;
+}
